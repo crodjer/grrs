@@ -1,3 +1,5 @@
+/// Given an iterator on strings and a pattern string to search, returns an
+/// iterator of all the strings which contain the pattern.
 pub fn find_matches<'a>(
     lines: impl Iterator<Item = String> + 'a,
     pattern: &'a str,

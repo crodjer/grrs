@@ -13,3 +13,15 @@ It has a few differences from the final `grrs` built in the tutorial:
    so that we avoid loading all the content from a file in memory.
 3. Dealing with iterators in `find_matches`, so that the processing is
    done in a lazy stream.
+
+## Installation
+To install, run:
+```
+cargo install grrs-lazy
+```
+
+You can then search for lines in a text file:
+```
+$ grrs-lazy Sherlock path/to/the-adventures-of-sherlock-holmes.txt | wc -c
+6089
+```

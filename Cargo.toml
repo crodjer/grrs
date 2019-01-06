@@ -3,6 +3,7 @@ name = "grrs-lazy"
 version = "0.1.0"
 authors = ["Rohan Jain <crodjer@gmail.com>"]
 license = "GPL-3.0-or-later"
+readme="README.md"
 description = "A tool to search files"
 homepage = "https://github.com/crodjer/grrs/"
 repository = "https://github.com/crodjer/grrs/"
