@@ -1,5 +1,8 @@
 # grrs-lazy
 
+[![Crate](https://img.shields.io/crates/v/grrs-lazy.svg)](https://crates.io/crates/grrs-lazy)
+[![Build Status](https://travis-ci.com/crodjer/grrs-lazy.svg?branch=master)](https://travis-ci.com/crodjer/grrs-lazy)
+
 A simple search utility, based on the `rust` `cli-wg` tutorial:
 https://rust-lang-nursery.github.io/cli-wg/tutorial/
 
