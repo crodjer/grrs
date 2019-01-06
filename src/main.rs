@@ -1,7 +1,7 @@
 use clap_verbosity_flag::Verbosity;
 use exitfailure::ExitFailure;
 use failure::ResultExt;
-use grrs;
+use grrs_lazy as grrs;
 use log::info;
 use std::fs;
 use std::io::{BufRead, BufReader};
