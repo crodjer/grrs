@@ -1,6 +1,6 @@
 [package]
 name = "grrs-lazy"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Rohan Jain <crodjer@gmail.com>"]
 license = "GPL-3.0-or-later"
 readme="README.md"
@@ -12,12 +12,12 @@ categories = ["command-line-utilities"]
 edition = "2018"
 
 [dependencies]
-clap-verbosity-flag = "0.2.0"
-env_logger = "0.6.0"
-exitfailure = "0.5.1"
-failure = "0.1.5"
-log = "0.4.6"
-structopt = "0.2.14"
+clap-verbosity-flag = "0.2"
+env_logger = "0.6"
+exitfailure = "0.5"
+failure = "0.1"
+log = "0.4"
+structopt = "0.2"
 
 [dev-dependencies]
 assert_cmd = "0.10"
