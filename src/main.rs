@@ -29,10 +29,7 @@ fn main() -> Result<(), ExitFailure> {
     let f = fs::File::open(&args.path)
         .with_context(|_| format!("could not read file {:?}", &args.path))?;
 
-    let lines = BufReader::new(f)
-        .lines()
-        .filter(Result::is_ok)
-        .map(Result::unwrap);
+    let lines = BufReader::new(f).lines().filter_map(Result::ok);
     for line in grrs::find_matches(lines, &args.pattern) {
         println!("{}", line);
     }

@@ -1,7 +1,7 @@
-pub fn find_matches<'a, I: 'a>(lines: I, pattern: &'a str) -> impl Iterator<Item = String> + 'a
-where
-    I: Iterator<Item = String>,
-{
+pub fn find_matches<'a>(
+    lines: impl Iterator<Item = String> + 'a,
+    pattern: &'a str,
+) -> impl Iterator<Item = String> + 'a {
     lines.filter(move |line| line.contains(pattern))
 }
 
