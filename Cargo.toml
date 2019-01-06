@@ -1,0 +1,7 @@
+[package]
+name = "grrs"
+version = "0.1.0"
+authors = ["Rohan Jain <crodjer@gmail.com>"]
+edition = "2018"
+
+[dependencies]
