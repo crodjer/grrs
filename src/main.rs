@@ -4,7 +4,7 @@ use failure::ResultExt;
 use grrs_lazy as grrs;
 use log::info;
 use std::fs;
-use std::io::{BufRead, BufReader};
+use std::io::{self, BufRead, BufReader, Write};
 use std::path;
 use structopt::StructOpt;
 
@@ -30,8 +30,10 @@ fn main() -> Result<(), ExitFailure> {
         .with_context(|_| format!("could not read file {:?}", &args.path))?;
 
     let lines = BufReader::new(f).lines().filter_map(Result::ok);
+    let stdout = io::stdout();
+    let mut handle = stdout.lock();
     for line in grrs::find_matches(lines, &args.pattern) {
-        println!("{}", line);
+        write!(handle, "{}\n", line)?;
     }
     Ok(())
 }

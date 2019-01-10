@@ -22,6 +22,6 @@ cargo install grrs-lazy
 
 You can then search for lines in a text file:
 ```
-$ grrs-lazy Sherlock path/to/the-adventures-of-sherlock-holmes.txt | wc -c
+$ grrs-lazy Sherlock path/to/the-adventures-of-sherlock-holmes.txt | wc -l
 6089
 ```
